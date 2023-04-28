@@ -13,6 +13,7 @@ import { BodyUserComponent } from './FrontOffice/body-user/body-user.component';
 import { FooterUserComponent } from './FrontOffice/footer-user/footer-user.component';
 import { HeaderUserComponent } from './FrontOffice/header-user/header-user.component';
 import { PreloaderComponent } from './FrontOffice/preloader/preloader.component';
+import { LoanComponent } from './backOffice/loan/loan.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { PreloaderComponent } from './FrontOffice/preloader/preloader.component'
     BodyUserComponent,
     FooterUserComponent,
     HeaderUserComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    LoanComponent,
+    
   ],
   imports: [
     BrowserModule,

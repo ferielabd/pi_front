@@ -4,6 +4,7 @@ import { AllTemplateAdminComponent } from './backOffice/all-template-admin/all-t
 import { BodyAdminComponent } from './backOffice/body-admin/body-admin.component';
 import { AllTemplateUserComponent } from './FrontOffice/all-template-user/all-template-user.component';
 import { BodyUserComponent } from './FrontOffice/body-user/body-user.component';
+import { LoanComponent } from './backOffice/loan/loan.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path:'admin',
         component:BodyAdminComponent
+      },
+      {
+        path:'loans',
+        component:LoanComponent
       }
     ]
 
