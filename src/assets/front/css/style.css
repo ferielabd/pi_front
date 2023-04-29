@@ -23,7 +23,7 @@
 :root {
   --thm-font: 'Manrope', sans-serif;
   --thm-font-2: 'DM Sans', sans-serif;
-  --thm-base: hsla(59, 100%, 50%, 0.966);
+  --thm-base: rgb(204, 207, 23) ;
   --thm-base-rgb: 207, 23, 60;
   --thm-gray: #7f7873;
   --thm-gray-rgb: 127, 120, 115;
@@ -31,7 +31,7 @@
   --thm-white-rgb: 255, 255, 255;
   --thm-black: #1a1c23;
   --thm-black-rgb: 26, 28, 35;
-  --thm-primary: hsla(59, 100%, 50%, 0.966);
+  --thm-primary: rgb(204, 207, 23) ;
   --thm-primary-rgb: 255, 180, 0;
 }
 

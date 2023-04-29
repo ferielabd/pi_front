@@ -12,7 +12,7 @@ const routes: Routes = [
     component:AllTemplateAdminComponent,
     children:[
       {
-        path:'admin',
+        path:'homeAdmin',
         component:BodyAdminComponent
       },
       {
@@ -23,11 +23,11 @@ const routes: Routes = [
 
   },
   {
-    path:'',
+    path:'user',
     component: AllTemplateUserComponent,
     children:[
       {
-        path:'user',
+        path:'homeUser',
         component: BodyUserComponent
       }
     ]
