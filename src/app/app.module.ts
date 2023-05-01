@@ -14,6 +14,12 @@ import { FooterUserComponent } from './FrontOffice/footer-user/footer-user.compo
 import { HeaderUserComponent } from './FrontOffice/header-user/header-user.component';
 import { PreloaderComponent } from './FrontOffice/preloader/preloader.component';
 import { LoanComponent } from './backOffice/loan/loan.component';
+import { LoanHistoryComponent } from './backOffice/loan-history/loan-history.component';
+import { HomeLoanComponent } from './FrontOffice/home-loan/home-loan.component';
+import { PersonalLoanComponent } from './FrontOffice/personal-loan/personal-loan.component';
+import { EducationLoanComponent } from './FrontOffice/education-loan/education-loan.component';
+import { CarsLoanComponent } from './FrontOffice/cars-loan/cars-loan.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,11 +35,18 @@ import { LoanComponent } from './backOffice/loan/loan.component';
     HeaderUserComponent,
     PreloaderComponent,
     LoanComponent,
+    LoanHistoryComponent,
+    HomeLoanComponent,
+    PersonalLoanComponent,
+    EducationLoanComponent,
+    CarsLoanComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

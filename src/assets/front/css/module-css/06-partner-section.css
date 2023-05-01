@@ -66,11 +66,15 @@
 }
 
 .single-partner-logo-box a img {
-    position: relative;
+   position: relative;
     display: inline-block !important;
     opacity: 1.0;
     width: auto !important;
     transition: all 0.2s ease-in-out 0.1s;
+    
+       
+    
+    
 }
 
 .single-partner-logo-box:hover a img {

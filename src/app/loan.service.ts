@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Router, ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LoanService {
 
 
-  constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient) { }
+  constructor( private http: HttpClient) { }
 
  
   getAllCredits(): Observable<any[]> {

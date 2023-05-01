@@ -5,6 +5,7 @@ import { BodyAdminComponent } from './backOffice/body-admin/body-admin.component
 import { AllTemplateUserComponent } from './FrontOffice/all-template-user/all-template-user.component';
 import { BodyUserComponent } from './FrontOffice/body-user/body-user.component';
 import { LoanComponent } from './backOffice/loan/loan.component';
+import { HomeLoanComponent } from './FrontOffice/home-loan/home-loan.component';
 
 const routes: Routes = [
   {
@@ -23,12 +24,16 @@ const routes: Routes = [
 
   },
   {
-    path:'user',
+    path:'',
     component: AllTemplateUserComponent,
     children:[
       {
-        path:'homeUser',
+        path:'user',
         component: BodyUserComponent
+      },
+      {
+        path:'homeLoan',
+        component: HomeLoanComponent
       }
     ]
   }

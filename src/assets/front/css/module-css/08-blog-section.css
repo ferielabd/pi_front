@@ -1664,9 +1664,9 @@ Blog Style1 Area Css
     bottom: -50px;
     width: 180px;
     height: 270px;
-    background-image: -moz-linear-gradient(0deg, rgb(138, 15, 61) 0%, rgb(207, 23, 60) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(138, 15, 61) 0%, rgb(207, 23, 60) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(138, 15, 61) 0%, rgb(207, 23, 60) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(138, 120, 15) 0%, rgb(204, 207, 23) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(138, 120, 15) 0%, rgb(204, 207, 23) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(138, 120, 15) 0%, rgb(204, 207, 23) 100%);
     clip-path: polygon(0 50%, 100% 100%, 100% 0);
     z-index: -1;
 }
