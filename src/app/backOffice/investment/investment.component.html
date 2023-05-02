@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-header">
+      <h5 class="m-0">Investments</h5>
+  </div>
+
+  <div class="card-body">
+
+        <div class="card-body">
+          <div  class="table-responsive">
+              <table class="table table-bordered" id="userTable" width="200%" cellspacing="20">
+  <thead>
+      <tr>
+          <th style="background-color: black;color: aliceblue;">Invested Amount</th>
+          <th style="background-color: black;color: aliceblue;">Investment Date</th>
+          <th style="background-color: black;color: aliceblue;">Investment Project</th>
+          <th style="background-color: black;color: aliceblue;">Investor First Name</th>
+          <th style="background-color: black;color: aliceblue;">Investor Last Name</th>
+          <th style="background-color: black;color: aliceblue;">Investor E-mail</th>
+          <th style="background-color: black;color: aliceblue;">Investor Number</th>
+
+
+
+
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let p of listProjects">
+          <td>{{p.amount}}</td>
+          <td>{{p.createdAt}}</td>
+          <td>{{p.project.title}}</td>
+          <td>{{p.userInvestor.first_name}}</td>
+          <td>{{p.userInvestor.last_name}}</td>
+          <td>{{p.userInvestor.mail}}</td>
+          <td>{{p.userInvestor.phone}}</td>
+
+
+
+      </tr>
+
+  </tbody>
+
+

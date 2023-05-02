@@ -5,6 +5,10 @@ import { BodyAdminComponent } from './backOffice/body-admin/body-admin.component
 import { AllTemplateUserComponent } from './FrontOffice/all-template-user/all-template-user.component';
 import { BodyUserComponent } from './FrontOffice/body-user/body-user.component';
 import { LoanComponent } from './backOffice/loan/loan.component';
+import { ProjectComponent } from './backOffice/project/project.component';
+import { InvestmentComponent } from './backOffice/investment/investment.component';
+import { portfolioService } from './backOffice/portfolio/portfolio.service';
+import { PortfolioComponent } from './backOffice/portfolio/portfolio.component';
 
 const routes: Routes = [
   {
@@ -12,18 +16,30 @@ const routes: Routes = [
     component:AllTemplateAdminComponent,
     children:[
       {
-        path:'homeAdmin',
+        path:'admin',
         component:BodyAdminComponent
       },
       {
         path:'loans',
         component:LoanComponent
       }
+      ,{
+        path:'Project', component: ProjectComponent
+
+      },
+      {
+        path:'Investment', component: InvestmentComponent
+
+      },
+      {
+        path:'Portfolio', component: PortfolioComponent
+
+      }
     ]
 
   },
   {
-    path:'user',
+    path:'',
     component: AllTemplateUserComponent,
     children:[
       {

@@ -1,0 +1,61 @@
+<div class="card">
+  <div class="card-header">
+      <h5 class="m-0">Portfolios</h5>
+  </div>
+
+  <div class="card-body">
+
+        <div class="card-body">
+          <div  class="table-responsive">
+              <table class="table table-bordered" id="userTable" width="200%" cellspacing="20">
+  <thead>
+      <tr>
+                <th style="background-color: black;color: aliceblue;">Portfolio Name</th>
+                <th style="background-color: black;color: aliceblue;">Portfolio investments</th>
+                <th style="background-color: black;color: aliceblue;">Investment Date</th>
+                <th style="background-color: black;color: aliceblue;">Project Title</th>
+                <th style="background-color: black;color: aliceblue;">Investor First Name</th>
+                <th style="background-color: black;color: aliceblue;">Investor Last Name</th>
+                <th style="background-color: black;color: aliceblue;">Investor CIN</th>
+
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of listPortfolios">
+            <td>{{ p.nameP }}</td>
+            <td>
+              <ng-container *ngFor="let investment of p.investments">
+                {{ investment.amount }}<br>
+              </ng-container>
+            </td>
+            <td>
+              <ng-container *ngFor="let investment of p.investments">
+                {{ investment.date }}<br>
+              </ng-container>
+            </td>
+            <td>
+              <ng-container *ngFor="let investment of p.investments">
+                {{ investment.project.title }}<br>
+              </ng-container>
+            </td>
+            <td>
+              <ng-container *ngFor="let investment of p.investments">
+                {{ investment.userInvestor.first_name }}<br>
+              </ng-container>
+            </td>
+            <td>
+              <ng-container *ngFor="let investment of p.investments">
+                {{ investment.userInvestor.last_name }}<br>
+              </ng-container>
+            </td>
+            <td>
+              <ng-container *ngFor="let investment of p.investments">
+                {{ investment.userInvestor.cin }}<br>
+              </ng-container>
+            </td>
+          </tr>
+        </tbody>
