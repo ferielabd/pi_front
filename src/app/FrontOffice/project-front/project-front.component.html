@@ -1,94 +1,188 @@
+<!--<div class="card-body">
+
+
   <div class="row justify-content-center pt-2">
     <div class="text-center col">
-      <h2 class="h3">Project Details</h2>
-      <hr>
+      <h2>Create a New Project</h2>
     </div>
   </div>
   <form (ngSubmit)="addProject()">
-    <div class="form-group ">
 
+    <div class="form-group">
       <label for="title">Title:</label>
-      <input type="text" class="form-control" id="title" [(ngModel)]="Project.Title" name="Title" placeholder="Enter project title" required>
+      <input type="text" class="form-control" id="title" [(ngModel)]="Project.title" name="Title" placeholder="Enter project title" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="description">Description:</label>
       <textarea class="form-control" id="description" [(ngModel)]="Project.description" name="description" placeholder="Enter project description" required></textarea>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="totalInvestingAmount">Total Investing Amount:</label>
       <input type="number" class="form-control" id="totalInvestingAmount" [(ngModel)]="Project.totalInvestingAmount" name="totalInvestingAmount" placeholder="Enter total investing amount" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="startedAt">Started At:</label>
       <input type="date" class="form-control" id="startedAt" [(ngModel)]="Project.startedAt" name="startedAt" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="finishedAt">Finished At:</label>
       <input type="date" class="form-control" id="finishedAt" [(ngModel)]="Project.finishedAt" name="finishedAt" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="peopleLiftedOutOfPoverty">People Lifted Out Of Poverty:</label>
       <input type="number" class="form-control" id="peopleLiftedOutOfPoverty" [(ngModel)]="Project.peopleLiftedOutOfPoverty" name="peopleLiftedOutOfPoverty" placeholder="Enter number of people lifted out of poverty" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="jobsCreated">Jobs Created:</label>
       <input type="number" class="form-control" id="jobsCreated" [(ngModel)]="Project.jobsCreated" name="jobsCreated" placeholder="Enter number of jobs created" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="womenEntrepreneursSupported">Women Entrepreneurs Supported:</label>
       <input type="number" class="form-control" id="womenEntrepreneursSupported" [(ngModel)]="Project.womenEntrepreneursSupported" name="womenEntrepreneursSupported" placeholder="Enter number of women entrepreneurs supported" required>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label for="currentInvestingAmount">Current Investing Amount:</label>
       <input type="number" class="form-control" id="currentInvestingAmount" [(ngModel)]="Project.currentInvestingAmount" name="currentInvestingAmount" placeholder="Enter current investing amount" required>
     </div>
-  </form>
-  <div class="row justify-content-center">
-    <button type="submit" class="btn btn-primary mr-4 custom-btn">Create</button>
+    <div class="form-group">
+      <label  for="Net Revenue Project">Net Revenue Project:</label>
+      <input type="number" class="form-control" id="netRevenueProject" [(ngModel)]="Project.netRevenueProject" name="netRevenueProject" placeholder="Enter project net revenue" required>
+    </div>
+    <div class="form-group">
+      <label for="Cost Project">Cost Project:</label>
+      <input type="number" class="form-control" id="costProject"  [(ngModel)]="Project.costProject" name="costProject"  placeholder="Enter project cost"required>
+    </div>
+      <div class="row justify-content-center">
+    <button type="submit" class="btn btn-primary mr-4">Create</button>
 </div>
 
-<!--<form>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationDefault01">First name</label>
-      <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationDefault02">Last name</label>
-      <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationDefaultUsername">Username</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroupPrepend2">@</span>
-        </div>
-        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+</form>
+</div>!-->
+
+<section class="apply-form-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <div class="apply-form-box clearfix">
+                <div class="apply-form-box-bg"
+                style="background-image: url(assets/front/images/backgrounds/service-style1.jpg);"></div>
+                      <div class="apply-form-box__content">
+                      <div class="sec-title">
+                          <h2>Post your Project &<br> Get Call Back</h2>
+                          <div class="sub-title">
+                              <p>Fill all the necessary details.</p>
+                          </div>
+                      </div>
+                      <form (ngSubmit)="addProject()">
+
+                        <div class="form-group">
+                          <label for="title">Title:</label>
+                          <input type="text" class="form-control" id="title" [(ngModel)]="Project.title" name="Title" placeholder="Enter project title" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="description">Description:</label>
+                          <textarea class="form-control" id="description" [(ngModel)]="Project.description" name="description" placeholder="Enter project description" required></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="totalInvestingAmount">Total Investing Amount:</label>
+                          <input type="number" class="form-control" id="totalInvestingAmount" [(ngModel)]="Project.totalInvestingAmount" name="totalInvestingAmount" placeholder="Enter total investing amount" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="startedAt">Started At:</label>
+                          <input type="date" class="form-control" id="startedAt" [(ngModel)]="Project.startedAt" name="startedAt" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="finishedAt">Finished At:</label>
+                          <input type="date" class="form-control" id="finishedAt" [(ngModel)]="Project.finishedAt" name="finishedAt" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="peopleLiftedOutOfPoverty">People Lifted Out Of Poverty:</label>
+                          <input type="number" class="form-control" id="peopleLiftedOutOfPoverty" [(ngModel)]="Project.peopleLiftedOutOfPoverty" name="peopleLiftedOutOfPoverty" placeholder="Enter number of people lifted out of poverty" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="jobsCreated">Jobs Created:</label>
+                          <input type="number" class="form-control" id="jobsCreated" [(ngModel)]="Project.jobsCreated" name="jobsCreated" placeholder="Enter number of jobs created" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="womenEntrepreneursSupported">Women Entrepreneurs Supported:</label>
+                          <input type="number" class="form-control" id="womenEntrepreneursSupported" [(ngModel)]="Project.womenEntrepreneursSupported" name="womenEntrepreneursSupported" placeholder="Enter number of women entrepreneurs supported" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="currentInvestingAmount">Current Investing Amount:</label>
+                          <input type="number" class="form-control" id="currentInvestingAmount" [(ngModel)]="Project.currentInvestingAmount" name="currentInvestingAmount" placeholder="Enter current investing amount" required>
+                        </div>
+                        <div class="form-group">
+                          <label  for="Net Revenue Project">Net Revenue Project:</label>
+                          <input type="number" class="form-control" id="netRevenueProject" [(ngModel)]="Project.netRevenueProject" name="netRevenueProject" placeholder="Enter project net revenue" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="Cost Project">Cost Project:</label>
+                          <input type="number" class="form-control" id="costProject"  [(ngModel)]="Project.costProject" name="costProject"  placeholder="Enter project cost"required>
+                        </div>
+                          <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary mr-4">Create</button>
+                    </div>
+
+                    </form>
+
+
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationDefault03">City</label>
-      <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationDefault04">State</label>
-      <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationDefault05">Zip</label>
-      <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-    </div>
+</section>
+<!--End Apply Form Area-->
+<!--<h2>Create a New Project</h2>
+<form (ngSubmit)="addProject()">
+  <div>
+    <label>Title:</label>
+    <input type="text" [(ngModel)]="Project.Title" name="Title" required>
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-      <label class="form-check-label" for="invalidCheck2">
-        Agree to terms and conditions
-      </label>
-    </div>
+  <div>
+    <label>Description:</label>
+    <textarea [(ngModel)]="Project.description" name="description" required></textarea>
   </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
+  <div>
+    <label>Total Investing Amount:</label>
+    <input type="number" [(ngModel)]="Project.totalInvestingAmount" name="totalInvestingAmount" required>
+  </div>
+  <div>
+    <label>Started At:</label>
+    <input type="date" [(ngModel)]="Project.startedAt" name="startedAt" required>
+  </div>
+  <div>
+    <label>Finished At:</label>
+    <input type="date" [(ngModel)]="Project.finishedAt" name="finishedAt" required>
+  </div>
+  <div>
+    <label>People Lifted Out Of Poverty:</label>
+    <input type="number" [(ngModel)]="Project.peopleLiftedOutOfPoverty" name="peopleLiftedOutOfPoverty" required>
+  </div>
+  <div>
+    <label>Jobs Created:</label>
+    <input type="number" [(ngModel)]="Project.jobsCreated" name="jobsCreated" required>
+  </div>
+  <div>
+    <label>Women Entrepreneurs Supported:</label>
+    <input type="number" [(ngModel)]="Project.womenEntrepreneursSupported" name="womenEntrepreneursSupported" required>
+  </div>
+  <div>
+    <label>Current Investing Amount:</label>
+    <input type="number" [(ngModel)]="Project.currentInvestingAmount" name="currentInvestingAmount" required>
+  </div>
+  <div>
+    <label>Investor Count:</label>
+    <input type="number" [(ngModel)]="Project.investorCount" name="investorCount" required>
+  </div>
+  <div>
+    <label>Net Revenue Project:</label>
+    <input type="number" [(ngModel)]="Project.netRevenueProject" name="netRevenueProject" required>
+  </div>
+  <div>
+    <label>Cost Project:</label>
+    <input type="number" [(ngModel)]="Project.costProject" name="costProject" required>
+  </div>
+  <button type="submit">Create Project</button>
 </form>
 -->

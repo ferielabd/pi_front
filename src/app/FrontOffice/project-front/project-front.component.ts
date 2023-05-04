@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-front.component.css']
 })
 export class ProjectFrontComponent implements OnInit {
-  
-  Project:ProjectF=new ProjectF();
+
+  Project: ProjectF = new ProjectF();
+
   constructor(private ProjectfrontService: ProjectfrontService) { }
 
   ngOnInit(): void {}
@@ -25,5 +26,8 @@ export class ProjectFrontComponent implements OnInit {
     );
   }
 
+  onSubmit() {
+    this.addProject();
+  }
 
 }

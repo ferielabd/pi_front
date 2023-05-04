@@ -1,6 +1,6 @@
 export class ProjectF {
   idP!: number;
-  Title!: string;
+  title!: string;
   description!: string;
   totalInvestingAmount!: number;
   startedAt!: Date;
@@ -13,6 +13,7 @@ export class ProjectF {
   createdAt!: Date;
   netRevenueProject!: number;
   costProject!: number;
-  roiScore!: number;
+  roiScore!: number ;
+  user_client_cin!:number
 
 }
