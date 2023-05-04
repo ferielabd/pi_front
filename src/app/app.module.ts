@@ -18,6 +18,8 @@ import { ProjectComponent } from './backOffice/project/project.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InvestmentComponent } from './backOffice/investment/investment.component';
 import { PortfolioComponent } from './backOffice/portfolio/portfolio.component';
+import { ProjectFrontComponent } from './FrontOffice/project-front/project-front.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,14 @@ import { PortfolioComponent } from './backOffice/portfolio/portfolio.component';
     ProjectComponent,
     InvestmentComponent,
     PortfolioComponent,
+    ProjectFrontComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,7 @@ import { ProjectComponent } from './backOffice/project/project.component';
 import { InvestmentComponent } from './backOffice/investment/investment.component';
 import { portfolioService } from './backOffice/portfolio/portfolio.service';
 import { PortfolioComponent } from './backOffice/portfolio/portfolio.component';
+import { ProjectFrontComponent } from './FrontOffice/project-front/project-front.component';
 
 const routes: Routes = [
   {
@@ -39,13 +40,14 @@ const routes: Routes = [
 
   },
   {
-    path:'',
-    component: AllTemplateUserComponent,
+    path:'user',component: AllTemplateUserComponent,
     children:[
       {
         path:'homeUser',
         component: BodyUserComponent
-      }
+      },
+      {path:'addProject',
+      component:ProjectFrontComponent}
     ]
   }
 ];
