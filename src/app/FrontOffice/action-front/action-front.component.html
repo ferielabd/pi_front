@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="apply-form-box clearfix">
+        <div class="apply-form-box-bg"
+             style="background-image: url(assets/front/images/backgrounds/aaaa.jpg);">
+        </div>
+        <div class="apply-form-box__content">
+          <div class="sec-title">
+            <h2>Choose a project &<br> invest</h2>
+            <div class="sub-title">
+              <p>Fill all the necessary details.</p>
+            </div>
+          </div>
+          <form (ngSubmit)="createInvestment()">
+            <label>Your ID Number:</label>
+            <input type="number" class="form-control" [(ngModel)]="userId" name="userId" required><br>
+
+            <label>Project Number:</label>
+            <input type="number" class="form-control" [(ngModel)]="projectId" name="projectId" required><br>
+
+            <label>Portfolio Number:</label>
+            <input type="number" class="form-control" [(ngModel)]="portfolioId" name="portfolioId" required><br>
+
+            <label>Investment Data:</label>
+            <textarea class="form-control" [(ngModel)]="responseDTO.investmentId" name="investmentId" required></textarea><br>
+
+            <label>Amount:</label>
+            <input type="number" class="form-control" [(ngModel)]="responseDTO.amount" name="amount" required><br>
+
+            <label>Created At:</label>
+            <input type="text" class="form-control" [(ngModel)]="responseDTO.createdAt" name="createdAt" required><br>
+
+            <button type="submit" class="btn btn-primary mr-4">Create Investment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
