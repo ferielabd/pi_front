@@ -1,0 +1,56 @@
+<div class="card">
+  <div class="card-header">
+      <h5 class="m-0">Projects</h5>
+  </div>
+
+  <div class="card-body">
+
+        <div class="card-body">
+          <div  class="table-responsive">
+              <table class="table table-bordered" id="userTable" width="200%" cellspacing="20">
+  <thead>
+      <tr>
+
+          <th style="background-color: black;color: aliceblue;">Project Title</th>
+          <th style="background-color: black;color: aliceblue;">Project Description</th>
+          <th style="background-color: black;color: aliceblue;">Total Investing Amount</th>
+          <th style="background-color: black;color: aliceblue;">Started At</th>
+          <th style="background-color: black;color: aliceblue;">Finished At</th>
+          <th style="background-color: black;color: aliceblue;">People Lifted Out Of Poverty</th>
+          <th style="background-color: black;color: aliceblue;">Jobs Created</th>
+          <th style="background-color: black;color: aliceblue;">Women Entrepreneurs Supported</th>
+          <th style="background-color: black;color: aliceblue;">Current InvestingAmount</th>
+          <th style="background-color: black;color: aliceblue;">investorCount</th>
+
+          <th style="background-color: black;color: aliceblue;">createdAt</th>
+          <th style="background-color: black;color: aliceblue;">Project Net Revenue</th>
+          <th style="background-color: black;color: aliceblue;">Project Cost</th>
+          <th style="background-color: black;color: aliceblue;">Project ROI Score</th>
+
+
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let p of listP">
+          <td>{{p.Title}}</td>
+          <td>{{p.description}}</td>
+          <td>{{p.totalInvestingAmount}}</td>
+          <td>{{p.startedAt}}</td>
+          <td>{{p.finishedAt}}</td>
+          <td>{{p.peopleLiftedOutOfPoverty}}</td>
+          <td>{{p.jobsCreated}}</td>
+          <td>{{p.womenEntrepreneursSupported}}</td>
+          <td>{{p.currentInvestingAmount}}</td>
+          <td>{{p.investorCount}}</td>
+          <td>{{p.createdAt}}</td>
+          <td>{{p.netRevenueProject}}</td>
+          <td>{{p.costProject}}</td>
+          <td>{{p.roiScore}}</td>
+
+
+
+      </tr>
+
+  </tbody>
+
+

@@ -1,0 +1,125 @@
+<section class="intro-style2-area">
+  <div class="container">
+
+      <div class="row">
+          <div class="col-xl-6">
+              <div class="intro-style2-img-box" >
+
+                  <div class="inner">
+                      <img src="assets/front/images/backgrounds/service-style1.jpg" alt="">
+                      <div class="shape-1">
+                          <img src="assets/images/shapes/intro-style2-img-box-shape-1.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-6">
+              <div class="intro-style2-content-box">
+                  <div class="sec-title">
+                      <h2>LEND A HAND<br> SAVE A FRIEND</h2>
+                  </div>
+                  <div class="text">
+                      <p>"Investing in microfinance is not charity. It is a business. A business that seeks to empower the poor, generate profits for investors, and create lasting change in the world." - Jacqueline Novogratz, founder and CEO of Acumen..</p>
+                      <p>To help others thrive and prosper.</p>
+                  </div>
+                  <ul>
+                      <li>
+                          <div class="icon-box">
+                              <span class="icon-checkbox-mark"></span>
+                          </div>
+                          <p>Invest with EASE</p>
+                      </li>
+                      <li>
+                          <div class="icon-box">
+                              <span class="icon-checkbox-mark"></span>
+                          </div>
+                          <p>Check out the projects</p>
+                      </li>
+                  </ul>
+                  <div class="send-resume-box">
+                      <div class="icon">
+                          <span class="icon-cv"></span>
+                      </div>
+                      <div class="title">
+                          <h4><a href="#">More at </a></h4>
+                          <h3><a href="mailto:info@templatepath.com">careerpath@finbank.com</a></h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-12">
+            <div class="job-list-table-box">
+
+              <button class="btn btn-primary my-btn" (click)="onSubmit()">Sort by ROI Score</button>
+
+                <div class="table-outer">
+                    <table class="job-list-table">
+
+                        <thead class="header">
+                            <tr>
+                              <th >Project Title</th>
+                              <th >Project Description</th>
+                              <th >Total Investing Amount</th>
+                              <th>Started At</th>
+                              <th >Finished At</th>
+                              <th >People Lifted Out Of Poverty</th>
+                              <th >Jobs Created</th>
+                              <th >Women Entrepreneurs Supported</th>
+                              <th >Current InvestingAmount</th>
+                              <th >createdAt</th>
+                              <th >Project Net Revenue</th>
+                              <th >Project Cost</th>
+                              <th >Project ROI Score</th>
+                              <th >Invest</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <ng-container *ngIf="listSortedProjects.length > 0; else unsortedList">
+                            <tr *ngFor="let p of listSortedProjects">
+                              <td>{{p.title}}</td>
+                              <td>{{p.description}}</td>
+                              <td>{{p.totalInvestingAmount}}</td>
+                              <td>{{p.startedAt}}</td>
+                              <td>{{p.finishedAt}}</td>
+                              <td>{{p.peopleLiftedOutOfPoverty}}</td>
+                              <td>{{p.jobsCreated}}</td>
+                              <td>{{p.womenEntrepreneursSupported}}</td>
+                              <td>{{p.currentInvestingAmount}}</td>
+                              <td>{{p.createdAt}}</td>
+                              <td>{{p.netRevenueProject}}</td>
+                              <td>{{p.costProject}}</td>
+                              <td>{{p.roiScore}}</td>
+                              <td>
+                                <a class="btn-one"  >
+                                  <span class="txt" >Apply</span>
+                                </a>
+                              </td>
+                            </tr>
+                          </ng-container>
+                          <ng-template #unsortedList>
+                            <tr *ngFor="let p of listProjects">
+                              <td>{{p.title}}</td>
+                              <td>{{p.description}}</td>
+                              <td>{{p.totalInvestingAmount}}</td>
+                              <td>{{p.startedAt}}</td>
+                              <td>{{p.finishedAt}}</td>
+                              <td>{{p.peopleLiftedOutOfPoverty}}</td>
+                              <td>{{p.jobsCreated}}</td>
+                              <td>{{p.womenEntrepreneursSupported}}</td>
+                              <td>{{p.currentInvestingAmount}}</td>
+                              <td>{{p.createdAt}}</td>
+                              <td>{{p.netRevenueProject}}</td>
+                              <td>{{p.costProject}}</td>
+                              <td>{{p.roiScore}}</td>
+                              <td>
+                                <a class="btn-one" href="#">
+                                  <span class="txt">Apply</span>
+                                </a>
+                              </td>
+                            </tr>
+                          </ng-template>
+                        </tbody>
