@@ -10,6 +10,8 @@ import { InvestmentComponent } from './backOffice/investment/investment.componen
 import { portfolioService } from './backOffice/portfolio/portfolio.service';
 import { PortfolioComponent } from './backOffice/portfolio/portfolio.component';
 import { ProjectFrontComponent } from './FrontOffice/project-front/project-front.component';
+import { TestimonialsComponent } from './FrontOffice/testimonials/testimonials.component';
+import { PortfoliosFrontComponent } from './FrontOffice/portfolios-front/portfolios-front.component';
 
 const routes: Routes = [
   {
@@ -47,7 +49,12 @@ const routes: Routes = [
         component: BodyUserComponent
       },
       {path:'addProject',
-      component:ProjectFrontComponent}
+      component:ProjectFrontComponent},
+      {path:'seeTest',
+      component:TestimonialsComponent},
+      {path:'addportfolio',
+      component:PortfoliosFrontComponent}
+
     ]
   }
 ];

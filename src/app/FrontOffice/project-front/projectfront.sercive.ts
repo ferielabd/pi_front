@@ -8,10 +8,11 @@ import { ProjectF } from 'src/app/project.model';
 })
 export class ProjectfrontService {
 
-  API_URL="http://localhost:8086/Project/addProject"
+  API_URL="http://localhost:8086/Project/addprojects"
 
   constructor(private http:HttpClient) { }
-  addProject(project: ProjectF): Observable<ProjectF> {
-    return this.http.post<ProjectF>(this.API_URL, project);
+  addProject(project: ProjectF, clientId: number): Observable<ProjectF> {
+    const url = `${this.API_URL}?clientId=${clientId}`;
+    return this.http.post<ProjectF>(url, project);
 }
 }

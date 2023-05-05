@@ -1,65 +1,5 @@
-<!--<div class="card-body">
 
 
-  <div class="row justify-content-center pt-2">
-    <div class="text-center col">
-      <h2>Create a New Project</h2>
-    </div>
-  </div>
-  <form (ngSubmit)="addProject()">
-
-    <div class="form-group">
-      <label for="title">Title:</label>
-      <input type="text" class="form-control" id="title" [(ngModel)]="Project.title" name="Title" placeholder="Enter project title" required>
-    </div>
-    <div class="form-group">
-      <label for="description">Description:</label>
-      <textarea class="form-control" id="description" [(ngModel)]="Project.description" name="description" placeholder="Enter project description" required></textarea>
-    </div>
-    <div class="form-group">
-      <label for="totalInvestingAmount">Total Investing Amount:</label>
-      <input type="number" class="form-control" id="totalInvestingAmount" [(ngModel)]="Project.totalInvestingAmount" name="totalInvestingAmount" placeholder="Enter total investing amount" required>
-    </div>
-    <div class="form-group">
-      <label for="startedAt">Started At:</label>
-      <input type="date" class="form-control" id="startedAt" [(ngModel)]="Project.startedAt" name="startedAt" required>
-    </div>
-    <div class="form-group">
-      <label for="finishedAt">Finished At:</label>
-      <input type="date" class="form-control" id="finishedAt" [(ngModel)]="Project.finishedAt" name="finishedAt" required>
-    </div>
-    <div class="form-group">
-      <label for="peopleLiftedOutOfPoverty">People Lifted Out Of Poverty:</label>
-      <input type="number" class="form-control" id="peopleLiftedOutOfPoverty" [(ngModel)]="Project.peopleLiftedOutOfPoverty" name="peopleLiftedOutOfPoverty" placeholder="Enter number of people lifted out of poverty" required>
-    </div>
-    <div class="form-group">
-      <label for="jobsCreated">Jobs Created:</label>
-      <input type="number" class="form-control" id="jobsCreated" [(ngModel)]="Project.jobsCreated" name="jobsCreated" placeholder="Enter number of jobs created" required>
-    </div>
-    <div class="form-group">
-      <label for="womenEntrepreneursSupported">Women Entrepreneurs Supported:</label>
-      <input type="number" class="form-control" id="womenEntrepreneursSupported" [(ngModel)]="Project.womenEntrepreneursSupported" name="womenEntrepreneursSupported" placeholder="Enter number of women entrepreneurs supported" required>
-    </div>
-    <div class="form-group">
-      <label for="currentInvestingAmount">Current Investing Amount:</label>
-      <input type="number" class="form-control" id="currentInvestingAmount" [(ngModel)]="Project.currentInvestingAmount" name="currentInvestingAmount" placeholder="Enter current investing amount" required>
-    </div>
-    <div class="form-group">
-      <label  for="Net Revenue Project">Net Revenue Project:</label>
-      <input type="number" class="form-control" id="netRevenueProject" [(ngModel)]="Project.netRevenueProject" name="netRevenueProject" placeholder="Enter project net revenue" required>
-    </div>
-    <div class="form-group">
-      <label for="Cost Project">Cost Project:</label>
-      <input type="number" class="form-control" id="costProject"  [(ngModel)]="Project.costProject" name="costProject"  placeholder="Enter project cost"required>
-    </div>
-      <div class="row justify-content-center">
-    <button type="submit" class="btn btn-primary mr-4">Create</button>
-</div>
-
-</form>
-</div>!-->
-
-<section class="apply-form-area">
   <div class="container">
       <div class="row">
           <div class="col-xl-12">
@@ -74,7 +14,10 @@
                           </div>
                       </div>
                       <form (ngSubmit)="addProject()">
-
+                        <div class="form-group">
+                          <label for="Cost Project">ID Card Number:</label>
+                          <input type="number" class="form-control" id="user_client_cin"  [(ngModel)]="clientId" name="costProject"  placeholder="Enter project cost"required>
+                        </div>
                         <div class="form-group">
                           <label for="title">Title:</label>
                           <input type="text" class="form-control" id="title" [(ngModel)]="Project.title" name="Title" placeholder="Enter project title" required>
@@ -120,7 +63,7 @@
                           <input type="number" class="form-control" id="costProject"  [(ngModel)]="Project.costProject" name="costProject"  placeholder="Enter project cost"required>
                         </div>
                           <div class="row justify-content-center">
-                        <button type="submit" class="btn btn-primary mr-4">Create</button>
+                        <button type="submit" class="btn btn-primary mr-4 " [disabled]="isAdding">Create</button>
                     </div>
 
                     </form>
@@ -131,7 +74,6 @@
           </div>
       </div>
   </div>
-</section>
 <!--End Apply Form Area-->
 <!--<h2>Create a New Project</h2>
 <form (ngSubmit)="addProject()">

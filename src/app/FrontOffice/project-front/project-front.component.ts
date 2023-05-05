@@ -9,19 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectFrontComponent implements OnInit {
 
+  isAdding = false;
+
   Project: ProjectF = new ProjectF();
+  clientId: number=0;
 
   constructor(private ProjectfrontService: ProjectfrontService) { }
 
   ngOnInit(): void {}
 
   addProject() {
-    this.ProjectfrontService.addProject(this.Project).subscribe(
+    this.ProjectfrontService.addProject(this.Project,this.clientId).subscribe(
       (result) => {
         console.log('Project added successfully:', result);
+        this.isAdding = false;
+        this.Project = new ProjectF(); // Empty the form
       },
       (error) => {
         console.error('Failed to add project:', error);
+        this.isAdding = false;
       }
     );
   }

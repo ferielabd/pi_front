@@ -20,6 +20,8 @@ import { InvestmentComponent } from './backOffice/investment/investment.componen
 import { PortfolioComponent } from './backOffice/portfolio/portfolio.component';
 import { ProjectFrontComponent } from './FrontOffice/project-front/project-front.component';
 import { FormsModule } from '@angular/forms';
+import { TestimonialsComponent } from './FrontOffice/testimonials/testimonials.component';
+import { PortfoliosFrontComponent } from './FrontOffice/portfolios-front/portfolios-front.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { FormsModule } from '@angular/forms';
     InvestmentComponent,
     PortfolioComponent,
     ProjectFrontComponent,
+    TestimonialsComponent,
+    PortfoliosFrontComponent,
 
   ],
   imports: [

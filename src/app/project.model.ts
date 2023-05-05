@@ -14,6 +14,5 @@ export class ProjectF {
   netRevenueProject!: number;
   costProject!: number;
   roiScore!: number ;
-  user_client_cin!:number
-
+  clientId!:number;
 }

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+      <div class="col-xl-12">
+          <div class="apply-form-box clearfix">
+            <div class="apply-form-box-bg"
+            style="background-image: url(assets/front/images/backgrounds/ousss.jpg);"></div>
+                  <div class="apply-form-box__content">
+                  <div class="sec-title">
+                      <h2>Post your Project &<br> Get Call Back</h2>
+                      <div class="sub-title">
+                          <p>Fill all the necessary details.</p>
+                      </div>
+                  </div>
+                  <form (ngSubmit)="addPortfolio()" >
+                    <div class="form-group">
+                      <label for="Cost Project">Portfolio Name:</label>
+                      <input t type="text" class="form-control" id="title" id="nameP"  [(ngModel)]="portfolio.nameP" name="PortfolioName"  placeholder="Enter Portfolio Name"required>
+                    </div>
+                    <div class="row justify-content-center">
+                      <button type="submit" class="btn btn-primary mr-4 " >Create</button>
+                  </div>
+
+
+                </form>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
